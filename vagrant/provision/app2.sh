@@ -7,7 +7,7 @@ apt-get install -y python2.7
 
 sudo ln -s /usr/bin/python2.7 /usr/bin/python
 
-sed -i 's/ubuntu/app1/g' /etc/hostname
-sed -i 's/ubuntu/app1/g' /etc/hosts
+sed -i 's/ubuntu/app2/g' /etc/hostname
+sed -i 's/ubuntu/app2/g' /etc/hosts
 
-echo 'app1' > /proc/sys/kernel/hostname
+echo 'app2' > /proc/sys/kernel/hostname

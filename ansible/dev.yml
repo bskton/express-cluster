@@ -3,6 +3,12 @@
   remote_user: "{{ admin_user }}"
   become: yes
   become_user: root
-  
   roles:
     - haproxy
+
+- hosts: app
+  remote_user: "{{ admin_user }}"
+  become: yes
+  become_user: root
+  roles:
+    - app
